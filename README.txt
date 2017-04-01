@@ -1,14 +1,13 @@
-Compiler component: Parser
+Parser:
 
-Group: Ang Li, Dan Deng, Kuang Han
+Ansël Corona 20140031
 
-Comments:
-On top of all the grammar rules for the Tiger Language as described by the book, we added precedence directives for some of the keywords in the language so that shift/reduce conflicts may be resolved. An example of a precedence directive we added is:
+Basado en las reglas de gramatica de Tiger descritas en el libro, agregando directivas de precedencia a algunas de las keywords del lenguaje para eliminar los conflictos de shift/reduce que se presrntaban, una de estas directivas es:
 
 %nonassoc ELSE
 
-We tell ML-yacc that this terminal binds less tightly than arithmetic and boolean operators so that the expression:
+Le decimos al ML-yacc que este terminal se une con menor cercanía que los operadores booleanos y aritmeticos, de manera que la expresion:
 
 IF exp THEN exp ELSE exp
 
-can be parsed unambiguously. Other precedence directives were used in a similar way.
+se pueda parsear de manera no ambigua. El mismo uso le fue dado a las otras directivas de precedencia
