@@ -2,7 +2,7 @@ Parser:
 
 Ansël Corona 20140031
 
-Basado en las reglas de gramatica de Tiger descritas en el libro, agregando directivas de precedencia a algunas de las keywords del lenguaje para eliminar los conflictos de shift/reduce que se presrntaban, una de estas directivas es:
+Basado en las reglas de gramatica de Tiger descritas en el libro, agregando directivas de precedencia a algunas de las keywords del lenguaje para eliminar los conflictos de shift/reduce que se presentaban, una de estas directivas es:
 
 %nonassoc ELSE
 
